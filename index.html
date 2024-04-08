@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Image Gallery</title>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+  <link rel="stylesheet" href="style.css">
+</head>
+<style>
+    * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    background-image: url('nfss.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.container {
+    padding: 3rem;
+}
+
+h1 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    font-size: 3rem;
+    font-weight: bold;
+    padding: 2rem;
+    text-align: center;
+    background-color: yellow;
+    border-radius: 50px;
+    border: 3px solid black;
+}
+
+.image {
+    display: block;
+    width: 100%;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.caption {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
+    font-size: 20px;
+    background-color: yellow;
+    border: 3px solid black;
+    border-radius: 5px;
+}
+
+.thumbnail {
+    position: relative;
+    overflow: hidden;
+}
+
+.img-container {
+    position: relative;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0.5);
+    color: black;
+    opacity: 0;
+    transition: opacity 0.5s ease;
+    text-align: center;
+    padding: 20px;
+}
+
+.thumbnail:hover .overlay {
+    opacity: 1;
+}
+
+.jumbotron {
+    background-color: #9fccf8be; /* Set desired background color */
+    padding: 3rem; /* Set desired padding */
+    margin-bottom: 3rem; /* Optional: Adjust margin bottom as needed */
+}
+
+.jumbotron p {
+    line-height: 1.6; /* Adjust line height as needed */
+    font-size: 1.8rem;
+}
+
+.description {
+    background-color: yellow; /* Set yellow background color */
+    padding: 10px; /* Set padding for the description */
+    border: 3px solid black; /* Add border for better visibility */
+    border-radius: 5px; /* Add border radius for better appearance */
+    font-family: Georgia, 'Times New Roman', Times, serif; /* Set font family */
+    font-size: 16px; /* Set font size */
+    text-align: center; /* Center-align text */
+    margin-top: 10px; /* Add some top margin for spacing */
+}
+
+
+
+@media (max-width: 768px) {
+    .thumbnail {
+        margin-bottom: 20px;
+    }
+}
+
+</style>
+<body>
+
+<div class="jumbotron">
+  <div class="container">
+    <h1 class="display-4">Welcome to my Car Gallery!</h1>
+    <p>A car gallery serves as a dynamic space where automotive enthusiasts can indulge in the beauty, innovation, and craftsmanship of 
+       automobiles. It's a haven where sleek designs, cutting-edge technology, and timeless classics converge, offering visitors a curated 
+       journey through automotive history and innovation. Whether showcasing vintage models steeped in nostalgia, groundbreaking prototypes 
+       pushing the boundaries of engineering, or the latest luxury vehicles embodying elegance and performance, car galleries provide a 
+       platform for enthusiasts to immerse themselves in the allure of automotive culture. With meticulously curated exhibits, interactive 
+       displays, and expertly guided tours, these galleries not only celebrate the artistry of automotive design but also foster a sense of 
+       community among enthusiasts, igniting passion and sparking conversations about the past, present, and future of mobility.</p>
+  </div>
+</div>
+
+    <div class="container">
+        <div class="row">
+
+
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="thumbnail">
+                    <div class="img-container">
+                        <img src="img1.jpg" width="500" height="500px" class="image">
+                        <div class="overlay">
+                            <p class="caption">Ferrari LaFerrari</p>
+                            <p class="description">The Ferrari LaFerrari is a limited production hybrid sports car built by Ferrari, combining a V12 engine with an electric motor for a total output of 949 horsepower. It's known for its stunning design and exceptional performance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="thumbnail">
+                    <div class="img-container">
+                        <img src="img2.jpg" height="500px" class="image">
+                        <div class="overlay">
+                            <p class="caption">Porsche 911</p>
+                            <p class="description">The Porsche 911 is an iconic sports car known for its distinctive design and performance. It has a rich heritage dating back to the 1960s and continues to be a benchmark for sports cars today.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="thumbnail">
+                    <div class="img-container">
+                        <img src="img3.jpg" height="500px" class="image">
+                         <div class="overlay">
+                            <p class="caption">Lamborghini Aventador SVJ</p>
+                            <p class="description">The Lamborghini Aventador SVJ is a high-performance supercar known for its aggressive styling and powerful V12 engine. It's one of the fastest production cars around the track, setting records for performance and speed.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="thumbnail">
+                    <div class="img-container">
+                        <img src="img4.jpg" height="500px" class="image">
+                        <div class="overlay">
+                            <p class="caption">Mercedes-Benz S-Class</p>
+                            <p class="description">The Mercedes-Benz S-Class is a luxury flagship sedan renowned for its exquisite craftsmanship, advanced technology, and unparalleled comfort. It represents the epitome of luxury and sophistication in the automotive world.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="thumbnail">
+                    <div class="img-container">
+                        <img src="img5.jpg" height="500px" class="image">
+                        <div class="overlay">
+                            <p class="caption">Tesla Model S</p>
+                            <p class="description">The Tesla Model S is an all-electric luxury sedan known for its groundbreaking technology, impressive performance, and sleek design. It's a pioneer in the electric vehicle industry, setting new standards for innovation and sustainability.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="thumbnail">
+                    <div class="img-container">
+                        <img src="img6.jpg" height="500px" class="image">
+                        <div class="overlay">
+                            <p class="caption">BMW M5</p>
+                            <p class="description">The BMW M5 is a high-performance luxury sedan known for its powerful engine, precise handling, and luxurious interior. It's a perfect blend of performance and comfort, appealing to driving enthusiasts and luxury car aficionados alike.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="thumbnail">
+                    <div class="img-container">
+                        <img src="img7.jpg" height="500px" class="image">
+                        <div class="overlay">
+                            <p class="caption">Audi RS7</p>
+                            <p class="description">The Audi RS7 is a high-performance luxury sportback known for its powerful engine, agile handling, and stylish design. It combines the practicality of a sedan with the performance of a sports car, making it a versatile and thrilling driving experience.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="thumbnail">
+                    <div class="img-container">
+                        <img src="img8.jpg" height="500px" class="image">
+                        <div class="overlay">
+                            <p class="caption">McLaren 720S</p>
+                            <p class="description">The McLaren 720S is a high-performance supercar known for its breathtaking acceleration, aerodynamic design, and cutting-edge technology. It's a masterpiece of engineering, delivering an exhilarating driving experience on both the road and the track.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="thumbnail">
+                    <div class="img-container">
+                        <img src="img9.jpg" height="500px" class="image">
+                        <div class="overlay">
+                            <p class="caption">Range Rover Autobiography</p>
+                            <p class="description">The Range Rover Autobiography is the pinnacle of luxury SUVs, known for its opulent interior, refined ride, and off-road capability. It offers unmatched comfort and prestige, making it the vehicle of choice for discerning buyers seeking the ultimate in luxury and performance.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="thumbnail">
+                    <div class="img-container">
+                        <img src="img10.jpg" height="500px" class="image">
+                        <div class="overlay">
+                            <p class="caption">Ford Mustang Shelby GT500</p>
+                            <p class="description">The Ford Mustang Shelby GT500 is a high-performance muscle car known for its powerful engine, aggressive styling, and legendary performance heritage. It's an icon of American automotive culture, delivering exhilarating performance and timeless appeal.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="thumbnail">
+                    <div class="img-container">
+                        <img src="img11.jpg" height="500px" class="image">
+                        <div class="overlay">
+                            <p class="caption">Toyota Prius</p>
+                            <p class="description">The Toyota Prius is a hybrid electric car known for its fuel efficiency, reliability, and eco-friendly features. It's a popular choice among environmentally conscious drivers looking for a practical and sustainable transportation solution.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-xl-4 col-md-6 col-sm-12">
+                <div class="thumbnail">
+                    <div class="img-container">
+                        <img src="img12.jpg" height="500px" class="image">
+                        <div class="overlay">
+                            <p class="caption">Jeep Wrangler Rubicon</p>
+                            <p class="description">The Jeep Wrangler Rubicon is an iconic off-road SUV known for its rugged capability, adventurous spirit, and timeless design. It's a versatile vehicle capable of tackling the toughest terrain, making it the perfect choice for outdoor enthusiasts and off-road adventurers.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+</body>
+</html>
